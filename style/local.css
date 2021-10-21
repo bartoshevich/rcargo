@@ -1,0 +1,114 @@
+/*.hero-body {
+    background-color: #cccccc;
+    background-image: 
+    -webkit-image-set(
+                    url('https://res.cloudinary.com/bartoshevich/image/upload/f_auto,q_auto/v1634746962/rcargo/scania.jpg') 1.96x,
+                    url('https://res.cloudinary.com/bartoshevich/image/upload/w_1920/f_auto,q_auto/v1634746962/rcargo/scania.jpg') 1x
+                );
+               
+    background-image:
+                image-set(
+                    url('https://res.cloudinary.com/bartoshevich/image/upload/f_auto,q_auto/v1634746962/rcargo/scania.jpg') 1.96x,
+                    url('https://res.cloudinary.com/bartoshevich/image/upload/w_1920/f_auto,q_auto/v1634746962/rcargo/scania.jpg') 1x
+                );
+   
+background-position: center; 
+background-repeat: no-repeat; 
+background-size: cover; 
+}
+*/
+
+.noperenos {
+    white-space: nowrap;
+}
+
+.paragraph {
+    max-width: 75ch;
+}
+
+/*
+.photo__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(3, 15em);
+  grid-gap: .2em;
+  max-height: 500px;
+  grid-template-areas:
+    "a b"
+    "a c" ;
+}
+.item1 {
+    grid-area: a;
+    margin-left: auto;
+  }
+  .item2 {
+    grid-area: b;
+  }
+  .item3 {
+    grid-area: c;
+  }
+
+.photo__grid-item {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+*/
+
+.whatsapp {
+    color:#075e54;
+}
+
+.viber {
+   color:#665cac;
+}
+
+.telegram {
+    color:rgb(0, 136, 204);
+}
+
+/*intro */
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr; 
+//    grid-template-rows: repeat(3, 500px);
+//    max-height: 50vh;
+}
+
+.intro__image {
+    height: 100%;
+   object-fit: cover;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+  background: #f2f2f2;
+}
+
+
+@media (max-width: 1009px) {
+    .intro__image {
+     height: 320px;
+    }    
+ }
+
+@media (min-width: 1010px) and (max-width: 1399px) {
+    .intro__image {
+     height: 600px;
+    }
+     
+ }
+
+
+ @media (min-width: 1400px)  {
+    .intro__image {
+     height: 700px;
+    }
+}
+
+
+@media (min-width: 3001px) {
+    .intro__image {
+     height: 1000px;
+    }
+}

@@ -1,0 +1,41 @@
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+
+if ($navbarBurgers.length > 0) {
+
+
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+</script>
+
+{% comment %} <!-- service-workers -->{% endcomment %}
+<script >
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-workers.js', { scope: '/' }).then(function(reg) {
+        console.log('Registration succeeded. Scope is ' + reg.scope);
+      }).catch(function(error) {
+        console.log('Registration failed with ' + error);
+      });
+    };
+    
+</script>

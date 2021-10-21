@@ -1,0 +1,52 @@
+---
+layout: compress
+---
+<!Doctype html>
+<html lang="ru" >
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  {% include meta.html %} 
+  {% include icons.html %} 
+  {% include schema.html %} 
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="/style/local.css">
+ 
+  <script async src="https://kit.fontawesome.com/b98ef68819.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+
+{% include menu.html %}  
+
+<section class="hero is-fullheight">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+            Ошибка 404
+          </p>
+          <p class="subtitle">
+            Время этой страницы еще не пришло 
+          </p>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+  
+
+{% include footer.html %} 
+{% include scripts.html %}
+</body>
+</html>
+

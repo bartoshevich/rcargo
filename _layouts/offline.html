@@ -1,0 +1,54 @@
+---
+layout: compress
+---
+<!Doctype html>
+<html lang="ru" >
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  {% include meta.html %} 
+  {% include icons.html %} 
+  {% include schema.html %} 
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="/style/local.css">
+ 
+  <script async src="https://kit.fontawesome.com/b98ef68819.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+
+{% include menu.html %}  
+
+<section class="hero is-fullheight">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+            Вы&nbsp;&mdash; оффлайн
+          </p>
+          <p class="is-size-5 my-4"> Попробуйте связаться с&nbsp;нами по&nbsp;телефону: </p>
+          <p class="subtitle"><a  href="tel:+375296097736" title="позвонить"> +375 (29) <span class="noperenos">609-77-36</span></a> (A1)</p>
+            <p class="subtitle"><a  href="tel:+375293027736" title="позвонить"> +375 (29) <span class="noperenos">302-77-36</span></a> (A1)</p>
+                <p class="subtitle"><a  href="tel:+375297097736" title="позвонить"> +375 (29) <span class="noperenos">709-77-36</span></a> (МТС)
+          </p>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+  
+
+{% include footer.html %} 
+{% include scripts.html %}
+</body>
+</html>
+

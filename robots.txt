@@ -1,0 +1,6 @@
+# User-agent: *
+Disallow: *
+
+sitemap: https://rcargo.by/sitemap.xml
+Host: https://rcargo.by
+
