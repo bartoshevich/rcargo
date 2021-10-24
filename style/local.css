@@ -123,3 +123,23 @@ background-size: cover;
         margin-top:.75rem;
     }
     }
+
+@media (min-width:1024px) {
+        .paragraph__center--desktop {
+            max-width: 75ch;
+            margin: 0 auto;
+        }
+        }    
+
+.flex__columns {
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+line-height: 2em;
+column-gap: .3em;
+}
+
+.columns__item {
+    margin: 0 .8em .3em 0;
+}
