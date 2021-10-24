@@ -67,6 +67,35 @@ background-size: cover;
     color:rgb(0, 136, 204);
 }
 
+.skype {
+    color: #00aff0;
+    font-size: 1.5em;
+   
+}
+
+.email {
+  //  font-size: 1.5em;  
+}
+
+.A1__logo {
+    width: 1em;  
+}
+
+.mts__logo {
+    width:2.3em;
+}
+
+.div__logo {
+    width: 3.2em;
+}
+
+.c {
+    height: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
 /*intro */
 
 .intro {
@@ -135,8 +164,8 @@ background-size: cover;
     display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+line-height: 1.6em;
 justify-content: space-between;
-line-height: 2em;
 column-gap: .3em;
 }
 
