@@ -55,46 +55,6 @@ background-size: cover;
 }
 */
 
-.whatsapp {
-    color:#075e54;
-}
-
-.viber {
-   color:#665cac;
-}
-
-.telegram {
-    color:rgb(0, 136, 204);
-}
-
-.skype {
-    color: #00aff0;
-    font-size: 1.5em;
-   
-}
-
-.email {
-  //  font-size: 1.5em;  
-}
-
-.A1__logo {
-    width: 1em;  
-}
-
-.mts__logo {
-    width:2.3em;
-}
-
-.div__logo {
-    width: 3.2em;
-}
-
-.c {
-    height: 1.6em;
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
 
 /*intro */
 
@@ -171,4 +131,41 @@ column-gap: .3em;
 
 .columns__item {
     margin: 0 .8em .3em 0;
+}
+
+
+.whatsapp {
+    color:#075e54;
+}
+
+.viber {
+   color:#665cac;
+}
+
+.telegram {
+    color:rgb(0, 136, 204);
+}
+
+.skype {
+    color: #00aff0;
+    font-size: 1.5em;   
+}
+
+.A1__logo {
+    width: 1em;  
+}
+
+.mts__logo {
+    width:2.3em;
+}
+
+.div__logo {
+    width: 3.2em;
+}
+
+.c {
+    height: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
