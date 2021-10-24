@@ -125,14 +125,21 @@ background-size: cover;
 flex-direction: row;
 flex-wrap: wrap;
 line-height: 1.6em;
-justify-content: space-between;
+justify-content: center;
 column-gap: .3em;
 }
 
 .columns__item {
-    margin: 0 .8em .3em 0;
+    min-width: 230px;
+    max-width: 270px;
+flex: 1 1 100%;
+margin: .3em 0;
 }
 
+.columns__item--center {
+    display: flex;
+    justify-content: center;
+}
 
 .whatsapp {
     color:#075e54;
