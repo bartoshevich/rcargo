@@ -124,9 +124,16 @@ background-size: cover;
     display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+justify-content: space-between;
 line-height: 1.6em;
-justify-content: center;
 column-gap: .3em;
+}
+
+
+@media (min-width:595px) {
+    .flex__columns {
+        justify-content: center;
+    }
 }
 
 .columns__item {
