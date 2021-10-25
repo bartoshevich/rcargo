@@ -1,5 +1,4 @@
-# User-agent: *
-Disallow: *
+User-agent: *
 
 sitemap: https://rcargo.by/sitemap.xml
 Host: https://rcargo.by
