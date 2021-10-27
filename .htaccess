@@ -1,3 +1,9 @@
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+</IfModule>
+
+
+
 <IfModule mod_deflate.c>
   # Compress HTML, CSS, JavaScript, Text, XML and fonts
   AddOutputFilterByType DEFLATE application/javascript
@@ -33,17 +39,17 @@
   ExpiresActive On
 
   # Images
-  ExpiresByType image/avif "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/gif "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 year"
-  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/avif "access plus 2 year"
+  ExpiresByType image/jpeg "access plus 2 year"
+  ExpiresByType image/gif "access plus 2 year"
+  ExpiresByType image/png "access plus 2 year"
+  ExpiresByType image/webp "access plus 2 year"
+  ExpiresByType image/svg+xml "access plus 2 year"
+  ExpiresByType image/x-icon "access plus 2 year"
 
   # Video
-  ExpiresByType video/mp4 "access plus 1 year"
-  ExpiresByType video/mpeg "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 2 year"
+  ExpiresByType video/mpeg "access plus 2 year"
 
   # CSS, JavaScript
   ExpiresByType text/css "access plus 1 month"
@@ -59,7 +65,7 @@
 <ifModule mod_headers.c> 
     # One year for image and video files
     <filesMatch ".(flv|gif|ico|jpg|jpeg|avif|mp4|mpeg|png|svg|swf|webp)$">
-        Header set Cache-Control "max-age=31536000, public"
+        Header set Cache-Control "max-age=41536000, public, immutable"
     </filesMatch>
 
     # One month for JavaScript and PDF files
