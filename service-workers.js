@@ -21,7 +21,8 @@ layout: null
           .then(function (cache) {
               return cache.addAll([
                 '/',              
-                '/images/qr-code.svg'               
+                '/images/qr-code.svg',
+                '/style/styles.pure.css'               
               ]);
           });
   };

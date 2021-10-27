@@ -120,33 +120,53 @@ background-size: cover;
         }
         }    
 
-.flex__columns {
-    display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
-line-height: 1.6em;
-column-gap: .3em;
+
+
+.contact__columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    
 }
 
 
 @media (min-width:595px) {
-    .flex__columns {
-        justify-content: center;
+    .contact__columns {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 210px 210px;
+        justify-items: center;
+       
     }
 }
 
-.columns__item {
-    min-width: 230px;
-    max-width: 270px;
-flex: 1 1 100%;
-margin: .3em 0;
+@media (min-width:1024px) {
+    .contact__columns {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 210px 210px;
+        justify-items: center;  
+    }
+    .qr {
+        grid-column: 1/-1;
+        align-content: center;   
+    }
 }
 
-.columns__item--center {
-    display: flex;
-    justify-content: center;
+@media (min-width:1200px) {
+    .contact__columns {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 220px;
+        
+    }
+    .qr {
+        grid-column: 4/-1;
+        align-content: center;   
+    }
 }
+
+
+
+
+
 
 .whatsapp {
     color:#075e54;
