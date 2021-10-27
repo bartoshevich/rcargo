@@ -1,22 +1,4 @@
-/*.hero-body {
-    background-color: #cccccc;
-    background-image: 
-    -webkit-image-set(
-                    url('https://res.cloudinary.com/bartoshevich/image/upload/f_auto,q_auto/v1634746962/rcargo/scania.jpg') 1.96x,
-                    url('https://res.cloudinary.com/bartoshevich/image/upload/w_1920/f_auto,q_auto/v1634746962/rcargo/scania.jpg') 1x
-                );
-               
-    background-image:
-                image-set(
-                    url('https://res.cloudinary.com/bartoshevich/image/upload/f_auto,q_auto/v1634746962/rcargo/scania.jpg') 1.96x,
-                    url('https://res.cloudinary.com/bartoshevich/image/upload/w_1920/f_auto,q_auto/v1634746962/rcargo/scania.jpg') 1x
-                );
-   
-background-position: center; 
-background-repeat: no-repeat; 
-background-size: cover; 
-}
-*/
+
 
 .noperenos {
     white-space: nowrap;
@@ -26,34 +8,6 @@ background-size: cover;
     max-width: 75ch;
 }
 
-/*
-.photo__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(3, 15em);
-  grid-gap: .2em;
-  max-height: 500px;
-  grid-template-areas:
-    "a b"
-    "a c" ;
-}
-.item1 {
-    grid-area: a;
-    margin-left: auto;
-  }
-  .item2 {
-    grid-area: b;
-  }
-  .item3 {
-    grid-area: c;
-  }
-
-.photo__grid-item {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-*/
 
 
 /*intro */
