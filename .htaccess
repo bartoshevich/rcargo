@@ -71,7 +71,7 @@ Header set Content-Security-Policy "default-src 'self'; base-uri 'self'; font-sr
 
 <ifModule mod_headers.c> 
     # One year for image and video files
-    <filesMatch ".(flv|gif|ico|jpg|jpeg|avif|mp4|mpeg|png|svg|swf|webp)$">
+    <filesMatch ".(flv|gif|ico|jpg|jpeg|avif|mp4|mpeg|png|svg|swf|webp|webmanifest)$">
         Header set Cache-Control "max-age=31536000, public, immutable"
     </filesMatch>
 
@@ -85,3 +85,11 @@ Header set Content-Security-Policy "default-src 'self'; base-uri 'self'; font-sr
         Header set Cache-Control "max-age=604800, public"
     </filesMatch>
 </ifModule>
+
+<IfModule mod_mime.c>
+    AddType application/manifest+json   webmanifest
+    AddType font/woff2   woff2
+    AddType font/woff    woff
+    AddType image/avif   avif 
+    AddType image/webp   webp
+</IfModule>
